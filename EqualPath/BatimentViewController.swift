@@ -13,22 +13,23 @@ class BatimentViewController: UIViewController, UITableViewDataSource, UITableVi
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BatimentCell") as! BatimentTableViewCell
+        cell.adresse.text = buildings[indexPath.row].address
+        cell.nom.text = buildings[indexPath.row].name
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 15
+        buildings.count
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         liste.delegate = self
         liste.dataSource = self
-
-        // Do any additional setup after loading the view.
     }
 
-    var id = 0
+    var id: String = ""
+    var buildings: [Batiment] = []
 
     /*
     // MARK: - Navigation

@@ -9,6 +9,8 @@ import UIKit
 
 class BatimentTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nom: UILabel!
+    @IBOutlet weak var adresse: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

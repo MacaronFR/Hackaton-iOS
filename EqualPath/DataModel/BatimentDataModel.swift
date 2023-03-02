@@ -13,16 +13,13 @@ struct BatimentData:Codable{
 }
 
 struct Batiment : Codable {
-    var id_batiment: Int
-    var nom_batiment : String
-    var not_batiment : Int
-    var adresse_batiment : String
-    var ville : String
-    var code_postal : String
-    var tel : String
-    var mail : String
-    var id_entreprise : Entreprise
-    var error: String?
+    var id: String
+    var name: String
+    var address: String
+    var phoneNumber: String
+    var mail: String
+    var createdAt: String
+    var updatedAt: String
 }
 
 struct Entreprise : Codable {
@@ -41,4 +38,3 @@ struct BatimentSelection: Codable {
     let nom_batiment: String
     let ville_batiment : String
 }
-

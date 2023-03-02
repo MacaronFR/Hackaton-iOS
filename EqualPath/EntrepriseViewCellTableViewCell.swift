@@ -8,9 +8,12 @@
 import UIKit
 
 class EntrepriseViewCellTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var ssiret: UILabel!
     @IBOutlet weak var Label: UILabel!
 
-    var id: Int = 0
+    var id: String = ""
+    var buildings: [Batiment] = []
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

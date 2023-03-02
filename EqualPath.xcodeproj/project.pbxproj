@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312E30561B5F0066506B653F /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E3BECAA44E30BD89655C4 /* ApiService.swift */; };
+		312E30913DD4A182E89CC203 /* ManageEntrepriseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E325C0F666666B5948B28 /* ManageEntrepriseViewModel.swift */; };
+		312E34C8BE4B64C43A6D0560 /* ManageBatimentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E341DD1EFDD27B080191E /* ManageBatimentViewModel.swift */; };
 		312E3537F6E6C678318707E2 /* EntrepriseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E36E3C97DB458581A2B8F /* EntrepriseDataModel.swift */; };
+		312E37404C540EBB96E0DA3F /* BatimentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E3F34C0B9C3BD7FFDC5E7 /* BatimentTableViewCell.swift */; };
 		312E38EA7A2E517FF55E5F33 /* BatimentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E3A2BCFA2AFA87148B374 /* BatimentDataModel.swift */; };
 		312E3AB564F8B645FB27F0C9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 312E3F255F447829931B3529 /* .gitignore */; };
 		312E3D8C6055353567A8FD81 /* ReponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E3C53497BB650CB92CEEF /* ReponseDataModel.swift */; };
 		312E3D98B21A5651E9330B9D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E369DC7D95DA1DA1CBE8B /* Plane.swift */; };
-		4A04144429B0EFB500598F57 /* Batiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04144329B0EFB500598F57 /* Batiment.swift */; };
 		4A04144629B0EFBA00598F57 /* BatimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04144529B0EFBA00598F57 /* BatimentViewController.swift */; };
-		4A04144829B0F39700598F57 /* BatimentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04144729B0F39700598F57 /* BatimentTableViewCell.swift */; };
 		4A08C87A29AFDB7B000DDFA0 /* EntrepriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */; };
 		4A4EC13429B09761006313C3 /* ARMeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4EC13329B09761006313C3 /* ARMeasureViewController.swift */; };
 		4AD93D4229B0C8AD005D1A33 /* SCNLine in Frameworks */ = {isa = PBXBuildFile; productRef = 4AD93D4129B0C8AD005D1A33 /* SCNLine */; };
@@ -48,14 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		312E325C0F666666B5948B28 /* ManageEntrepriseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageEntrepriseViewModel.swift; path = ViewModel/ManageEntrepriseViewModel.swift; sourceTree = "<group>"; };
+		312E341DD1EFDD27B080191E /* ManageBatimentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageBatimentViewModel.swift; path = ViewModel/ManageBatimentViewModel.swift; sourceTree = "<group>"; };
 		312E369DC7D95DA1DA1CBE8B /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		312E36E3C97DB458581A2B8F /* EntrepriseDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrepriseDataModel.swift; sourceTree = "<group>"; };
 		312E3A2BCFA2AFA87148B374 /* BatimentDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatimentDataModel.swift; sourceTree = "<group>"; };
+		312E3BECAA44E30BD89655C4 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		312E3C53497BB650CB92CEEF /* ReponseDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReponseDataModel.swift; sourceTree = "<group>"; };
 		312E3F255F447829931B3529 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
-		4A04144329B0EFB500598F57 /* Batiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Batiment.swift; path = "../../../Library/Developer/Xcode/DerivedData/EqualPath-biouyoqrjhscvffymdcrnpvtklxu/SourcePackages/checkouts/SceneKit-SCNLine/Batiment.swift"; sourceTree = "<group>"; };
+		312E3F34C0B9C3BD7FFDC5E7 /* BatimentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatimentTableViewCell.swift; sourceTree = "<group>"; };
 		4A04144529B0EFBA00598F57 /* BatimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatimentViewController.swift; sourceTree = "<group>"; };
-		4A04144729B0F39700598F57 /* BatimentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BatimentTableViewCell.swift; path = EqualPath/BatimentTableViewCell.swift; sourceTree = "<group>"; };
 		4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrepriseViewController.swift; sourceTree = "<group>"; };
 		4A4EC13329B09761006313C3 /* ARMeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMeasureViewController.swift; sourceTree = "<group>"; };
 		4AD93D4329B0E3FD005D1A33 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
@@ -115,8 +119,6 @@
 		DDEC612829AFCED4004B11C7 = {
 			isa = PBXGroup;
 			children = (
-				4A04144729B0F39700598F57 /* BatimentTableViewCell.swift */,
-				4A04144329B0EFB500598F57 /* Batiment.swift */,
 				DDEC613329AFCED4004B11C7 /* EqualPath */,
 				DDEC614A29AFCED7004B11C7 /* EqualPathTests */,
 				DDEC615429AFCED7004B11C7 /* EqualPathUITests */,
@@ -151,6 +153,10 @@
 				DDEC614229AFCED7004B11C7 /* Info.plist */,
 				312E369DC7D95DA1DA1CBE8B /* Plane.swift */,
 				312E35239272B9984C21673F /* DataModel */,
+				312E3F34C0B9C3BD7FFDC5E7 /* BatimentTableViewCell.swift */,
+				312E3BECAA44E30BD89655C4 /* ApiService.swift */,
+				312E341DD1EFDD27B080191E /* ManageBatimentViewModel.swift */,
+				312E325C0F666666B5948B28 /* ManageEntrepriseViewModel.swift */,
 			);
 			path = EqualPath;
 			sourceTree = "<group>";
@@ -319,14 +325,16 @@
 				4A4EC13429B09761006313C3 /* ARMeasureViewController.swift in Sources */,
 				DDEC613729AFCED4004B11C7 /* SceneDelegate.swift in Sources */,
 				4AEE66DA29AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift in Sources */,
-				4A04144429B0EFB500598F57 /* Batiment.swift in Sources */,
 				4A08C87A29AFDB7B000DDFA0 /* EntrepriseViewController.swift in Sources */,
-				4A04144829B0F39700598F57 /* BatimentTableViewCell.swift in Sources */,
 				312E3D98B21A5651E9330B9D /* Plane.swift in Sources */,
 				4A04144629B0EFBA00598F57 /* BatimentViewController.swift in Sources */,
 				312E3D8C6055353567A8FD81 /* ReponseDataModel.swift in Sources */,
 				312E38EA7A2E517FF55E5F33 /* BatimentDataModel.swift in Sources */,
 				312E3537F6E6C678318707E2 /* EntrepriseDataModel.swift in Sources */,
+				312E37404C540EBB96E0DA3F /* BatimentTableViewCell.swift in Sources */,
+				312E30561B5F0066506B653F /* ApiService.swift in Sources */,
+				312E34C8BE4B64C43A6D0560 /* ManageBatimentViewModel.swift in Sources */,
+				312E30913DD4A182E89CC203 /* ManageEntrepriseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,11 @@
 import Foundation
 
 struct Entreprises: Codable {
-    var id: Int
+    var id: String
     var name : String
     var siret : String
-    var error: String?
+    var createdAt: String
+    var updatedAt: String
+    var grade: Int
+    var buildings: [Batiment]
 }

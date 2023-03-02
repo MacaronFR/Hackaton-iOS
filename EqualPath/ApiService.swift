@@ -8,6 +8,6 @@
 import Foundation
 
 class ApiService {
-    let baseUrl = ""
+    let baseUrl = "https://api.equal-path.net"
     //"http://10.33.3.36:2000/api/"
 }

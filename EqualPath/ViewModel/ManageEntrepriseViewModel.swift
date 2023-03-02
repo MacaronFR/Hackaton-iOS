@@ -10,8 +10,8 @@ import Foundation
 class ManageEntrepriseViewModel: ObservableObject {
     let urlApi = ApiService()
     
-    func returnListEntreprise(completion: @escaping (Result<Entreprise, Error>) -> Void) {
-        let urlString = urlApi.baseUrl + "/T_COMPANY"
+    func returnListEntreprise(completion: @escaping (Result<[Entreprises], Error>) -> Void) {
+        let urlString = urlApi.baseUrl + "/companies"
         guard let url = URL(string: urlString) else {
             completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
             return
@@ -30,7 +30,7 @@ class ManageEntrepriseViewModel: ObservableObject {
                 return
             }
             do {
-                let entreprise = try JSONDecoder().decode(Entreprise.self, from: data)
+                let entreprise = try JSONDecoder().decode([Entreprises].self, from: data)
                 completion(.success(entreprise))
             } catch {
                 completion(.failure(error))
