@@ -1,16 +1,14 @@
 //
-//  EntrepriseViewCellTableViewCell.swift
+//  BatimentTableViewCell.swift
 //  EqualPath
 //
-//  Created by macaron on 01/03/2023.
+//  Created by macaron on 02/03/2023.
 //
 
 import UIKit
 
-class EntrepriseViewCellTableViewCell: UITableViewCell {
-    @IBOutlet weak var Label: UILabel!
+class BatimentTableViewCell: UITableViewCell {
 
-    var id: Int = 0
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

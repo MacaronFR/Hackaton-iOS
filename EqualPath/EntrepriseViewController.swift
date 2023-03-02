@@ -23,20 +23,10 @@ class EntrepriseViewController: UIViewController, UITableViewDataSource, UITable
         return 15
     }
 
-    /*func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-        let BatimentVC: EntrepriseDetailViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Batiment") as! EntrepriseDetailViewController
-
-        NSLog("%p", BatimentVC)
-
-        BatimentVC.id = 15
-    }*/
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "EntrepriseToBatiment"){
             let cell = sender as! EntrepriseViewCellTableViewCell
-            let vc = segue.destination as! EntrepriseDetailViewController
-            NSLog("%p", vc)
+            let vc = segue.destination as! BatimentViewController
             vc.id = cell.id
         }
     }
