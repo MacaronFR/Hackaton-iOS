@@ -12,7 +12,6 @@
 		312E3AB564F8B645FB27F0C9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 312E3F255F447829931B3529 /* .gitignore */; };
 		312E3D8C6055353567A8FD81 /* ReponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E3C53497BB650CB92CEEF /* ReponseDataModel.swift */; };
 		312E3D98B21A5651E9330B9D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E369DC7D95DA1DA1CBE8B /* Plane.swift */; };
-		4A04144429B0EFB500598F57 /* Batiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04144329B0EFB500598F57 /* Batiment.swift */; };
 		4A04144629B0EFBA00598F57 /* BatimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04144529B0EFBA00598F57 /* BatimentViewController.swift */; };
 		4A04144829B0F39700598F57 /* BatimentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04144729B0F39700598F57 /* BatimentTableViewCell.swift */; };
 		4A08C87A29AFDB7B000DDFA0 /* EntrepriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */; };
@@ -53,7 +52,6 @@
 		312E3A2BCFA2AFA87148B374 /* BatimentDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatimentDataModel.swift; sourceTree = "<group>"; };
 		312E3C53497BB650CB92CEEF /* ReponseDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReponseDataModel.swift; sourceTree = "<group>"; };
 		312E3F255F447829931B3529 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
-		4A04144329B0EFB500598F57 /* Batiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Batiment.swift; path = "../../../Library/Developer/Xcode/DerivedData/EqualPath-biouyoqrjhscvffymdcrnpvtklxu/SourcePackages/checkouts/SceneKit-SCNLine/Batiment.swift"; sourceTree = "<group>"; };
 		4A04144529B0EFBA00598F57 /* BatimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatimentViewController.swift; sourceTree = "<group>"; };
 		4A04144729B0F39700598F57 /* BatimentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BatimentTableViewCell.swift; path = EqualPath/BatimentTableViewCell.swift; sourceTree = "<group>"; };
 		4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrepriseViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				4A04144729B0F39700598F57 /* BatimentTableViewCell.swift */,
-				4A04144329B0EFB500598F57 /* Batiment.swift */,
 				DDEC613329AFCED4004B11C7 /* EqualPath */,
 				DDEC614A29AFCED7004B11C7 /* EqualPathTests */,
 				DDEC615429AFCED7004B11C7 /* EqualPathUITests */,
@@ -138,6 +135,7 @@
 		DDEC613329AFCED4004B11C7 /* EqualPath */ = {
 			isa = PBXGroup;
 			children = (
+				312E35239272B9984C21673F /* DataModel */,
 				4A04144529B0EFBA00598F57 /* BatimentViewController.swift */,
 				4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */,
 				4AEE66D929AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift */,
@@ -150,7 +148,6 @@
 				DDEC613F29AFCED7004B11C7 /* LaunchScreen.storyboard */,
 				DDEC614229AFCED7004B11C7 /* Info.plist */,
 				312E369DC7D95DA1DA1CBE8B /* Plane.swift */,
-				312E35239272B9984C21673F /* DataModel */,
 			);
 			path = EqualPath;
 			sourceTree = "<group>";
@@ -319,7 +316,6 @@
 				4A4EC13429B09761006313C3 /* ARMeasureViewController.swift in Sources */,
 				DDEC613729AFCED4004B11C7 /* SceneDelegate.swift in Sources */,
 				4AEE66DA29AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift in Sources */,
-				4A04144429B0EFB500598F57 /* Batiment.swift in Sources */,
 				4A08C87A29AFDB7B000DDFA0 /* EntrepriseViewController.swift in Sources */,
 				4A04144829B0F39700598F57 /* BatimentTableViewCell.swift in Sources */,
 				312E3D98B21A5651E9330B9D /* Plane.swift in Sources */,
