@@ -16,6 +16,14 @@
 		DDEC614C29AFCED7004B11C7 /* EqualPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC614B29AFCED7004B11C7 /* EqualPathTests.swift */; };
 		DDEC615629AFCED7004B11C7 /* EqualPathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC615529AFCED7004B11C7 /* EqualPathUITests.swift */; };
 		DDEC615829AFCED7004B11C7 /* EqualPathUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC615729AFCED7004B11C7 /* EqualPathUITestsLaunchTests.swift */; };
+		DDEC616529AFDB15004B11C7 /* ListeEntrepriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC616429AFDB15004B11C7 /* ListeEntrepriseViewController.swift */; };
+		DDEC616729B08834004B11C7 /* ListeBatimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC616629B08834004B11C7 /* ListeBatimentViewController.swift */; };
+		DDEC616A29B08D87004B11C7 /* ManageBatimentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC616929B08D87004B11C7 /* ManageBatimentViewModel.swift */; };
+		DDEC616C29B08E0D004B11C7 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC616B29B08E0D004B11C7 /* ApiService.swift */; };
+		DDEC616F29B08FA0004B11C7 /* EntrepriseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC616E29B08FA0004B11C7 /* EntrepriseDataModel.swift */; };
+		DDEC617129B09076004B11C7 /* BatimentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC617029B09076004B11C7 /* BatimentDataModel.swift */; };
+		DDEC617429B0953B004B11C7 /* ReponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC617329B0953B004B11C7 /* ReponseDataModel.swift */; };
+		DDEC617629B0B64C004B11C7 /* FormulaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC617529B0B64C004B11C7 /* FormulaireViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		DDEC615129AFCED7004B11C7 /* EqualPathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EqualPathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEC615529AFCED7004B11C7 /* EqualPathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualPathUITests.swift; sourceTree = "<group>"; };
 		DDEC615729AFCED7004B11C7 /* EqualPathUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualPathUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDEC616429AFDB15004B11C7 /* ListeEntrepriseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeEntrepriseViewController.swift; sourceTree = "<group>"; };
+		DDEC616629B08834004B11C7 /* ListeBatimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeBatimentViewController.swift; sourceTree = "<group>"; };
+		DDEC616929B08D87004B11C7 /* ManageBatimentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageBatimentViewModel.swift; sourceTree = "<group>"; };
+		DDEC616B29B08E0D004B11C7 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		DDEC616E29B08FA0004B11C7 /* EntrepriseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrepriseDataModel.swift; sourceTree = "<group>"; };
+		DDEC617029B09076004B11C7 /* BatimentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatimentDataModel.swift; sourceTree = "<group>"; };
+		DDEC617329B0953B004B11C7 /* ReponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReponseDataModel.swift; sourceTree = "<group>"; };
+		DDEC617529B0B64C004B11C7 /* FormulaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,9 @@
 		DDEC613329AFCED4004B11C7 /* EqualPath */ = {
 			isa = PBXGroup;
 			children = (
+				DDEC616B29B08E0D004B11C7 /* ApiService.swift */,
+				DDEC616D29B08F4C004B11C7 /* DataModel */,
+				DDEC616829B08D2E004B11C7 /* ViewModel */,
 				DDEC613429AFCED4004B11C7 /* AppDelegate.swift */,
 				DDEC613629AFCED4004B11C7 /* SceneDelegate.swift */,
 				DDEC613829AFCED4004B11C7 /* ViewController.swift */,
@@ -106,6 +125,9 @@
 				DDEC613D29AFCED7004B11C7 /* Assets.xcassets */,
 				DDEC613F29AFCED7004B11C7 /* LaunchScreen.storyboard */,
 				DDEC614229AFCED7004B11C7 /* Info.plist */,
+				DDEC616429AFDB15004B11C7 /* ListeEntrepriseViewController.swift */,
+				DDEC616629B08834004B11C7 /* ListeBatimentViewController.swift */,
+				DDEC617529B0B64C004B11C7 /* FormulaireViewController.swift */,
 			);
 			path = EqualPath;
 			sourceTree = "<group>";
@@ -125,6 +147,24 @@
 				DDEC615729AFCED7004B11C7 /* EqualPathUITestsLaunchTests.swift */,
 			);
 			path = EqualPathUITests;
+			sourceTree = "<group>";
+		};
+		DDEC616829B08D2E004B11C7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC616929B08D87004B11C7 /* ManageBatimentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDEC616D29B08F4C004B11C7 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC616E29B08FA0004B11C7 /* EntrepriseDataModel.swift */,
+				DDEC617029B09076004B11C7 /* BatimentDataModel.swift */,
+				DDEC617329B0953B004B11C7 /* ReponseDataModel.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +298,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDEC616F29B08FA0004B11C7 /* EntrepriseDataModel.swift in Sources */,
+				DDEC616729B08834004B11C7 /* ListeBatimentViewController.swift in Sources */,
+				DDEC616A29B08D87004B11C7 /* ManageBatimentViewModel.swift in Sources */,
 				DDEC613929AFCED4004B11C7 /* ViewController.swift in Sources */,
 				DDEC613529AFCED4004B11C7 /* AppDelegate.swift in Sources */,
+				DDEC617129B09076004B11C7 /* BatimentDataModel.swift in Sources */,
+				DDEC617429B0953B004B11C7 /* ReponseDataModel.swift in Sources */,
 				DDEC613729AFCED4004B11C7 /* SceneDelegate.swift in Sources */,
+				DDEC616C29B08E0D004B11C7 /* ApiService.swift in Sources */,
+				DDEC617629B0B64C004B11C7 /* FormulaireViewController.swift in Sources */,
+				DDEC616529AFDB15004B11C7 /* ListeEntrepriseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
