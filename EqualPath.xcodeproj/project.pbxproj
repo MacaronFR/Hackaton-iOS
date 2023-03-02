@@ -119,6 +119,7 @@
 		DDEC612829AFCED4004B11C7 = {
 			isa = PBXGroup;
 			children = (
+				4A04144729B0F39700598F57 /* BatimentTableViewCell.swift */,
 				DDEC613329AFCED4004B11C7 /* EqualPath */,
 				DDEC614A29AFCED7004B11C7 /* EqualPathTests */,
 				DDEC615429AFCED7004B11C7 /* EqualPathUITests */,
@@ -140,6 +141,7 @@
 		DDEC613329AFCED4004B11C7 /* EqualPath */ = {
 			isa = PBXGroup;
 			children = (
+				312E35239272B9984C21673F /* DataModel */,
 				4A04144529B0EFBA00598F57 /* BatimentViewController.swift */,
 				4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */,
 				4AEE66D929AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift */,
