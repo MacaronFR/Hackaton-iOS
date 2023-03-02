@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		312E3AB564F8B645FB27F0C9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 312E3F255F447829931B3529 /* .gitignore */; };
+		312E3D98B21A5651E9330B9D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E369DC7D95DA1DA1CBE8B /* Plane.swift */; };
 		4A08C87A29AFDB7B000DDFA0 /* EntrepriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */; };
+		4A4EC13429B09761006313C3 /* ARMeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4EC13329B09761006313C3 /* ARMeasureViewController.swift */; };
+		4AD93D4229B0C8AD005D1A33 /* SCNLine in Frameworks */ = {isa = PBXBuildFile; productRef = 4AD93D4129B0C8AD005D1A33 /* SCNLine */; };
 		4AEE66DA29AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEE66D929AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift */; };
 		4AEE66DC29AFF4B600BA88B9 /* EntrepriseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEE66DB29AFF4B600BA88B9 /* EntrepriseDetailViewController.swift */; };
 		DDEC613529AFCED4004B11C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC613429AFCED4004B11C7 /* AppDelegate.swift */; };
@@ -40,8 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		312E369DC7D95DA1DA1CBE8B /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		312E3F255F447829931B3529 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrepriseViewController.swift; sourceTree = "<group>"; };
+		4A4EC13329B09761006313C3 /* ARMeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMeasureViewController.swift; sourceTree = "<group>"; };
 		4AEE66D929AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrepriseViewCellTableViewCell.swift; sourceTree = "<group>"; };
 		4AEE66DB29AFF4B600BA88B9 /* EntrepriseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrepriseDetailViewController.swift; sourceTree = "<group>"; };
 		DDEC613129AFCED4004B11C7 /* EqualPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EqualPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD93D4229B0C8AD005D1A33 /* SCNLine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,10 +120,12 @@
 				DDEC613629AFCED4004B11C7 /* SceneDelegate.swift */,
 				DDEC613829AFCED4004B11C7 /* ViewController.swift */,
 				DDEC613A29AFCED4004B11C7 /* Main.storyboard */,
+				4A4EC13329B09761006313C3 /* ARMeasureViewController.swift */,
 				4AEE66DB29AFF4B600BA88B9 /* EntrepriseDetailViewController.swift */,
 				DDEC613D29AFCED7004B11C7 /* Assets.xcassets */,
 				DDEC613F29AFCED7004B11C7 /* LaunchScreen.storyboard */,
 				DDEC614229AFCED7004B11C7 /* Info.plist */,
+				312E369DC7D95DA1DA1CBE8B /* Plane.swift */,
 			);
 			path = EqualPath;
 			sourceTree = "<group>";
@@ -155,6 +163,9 @@
 			dependencies = (
 			);
 			name = EqualPath;
+			packageProductDependencies = (
+				4AD93D4129B0C8AD005D1A33 /* SCNLine */,
+			);
 			productName = EqualPath;
 			productReference = DDEC613129AFCED4004B11C7 /* EqualPath.app */;
 			productType = "com.apple.product-type.application";
@@ -202,6 +213,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
@@ -227,6 +241,9 @@
 				Base,
 			);
 			mainGroup = DDEC612829AFCED4004B11C7;
+			packageReferences = (
+				4AD93D4029B0C8AD005D1A33 /* XCRemoteSwiftPackageReference "SceneKit-SCNLine" */,
+			);
 			productRefGroup = DDEC613229AFCED4004B11C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,9 +291,11 @@
 				4AEE66DC29AFF4B600BA88B9 /* EntrepriseDetailViewController.swift in Sources */,
 				DDEC613929AFCED4004B11C7 /* ViewController.swift in Sources */,
 				DDEC613529AFCED4004B11C7 /* AppDelegate.swift in Sources */,
+				4A4EC13429B09761006313C3 /* ARMeasureViewController.swift in Sources */,
 				DDEC613729AFCED4004B11C7 /* SceneDelegate.swift in Sources */,
 				4AEE66DA29AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift in Sources */,
 				4A08C87A29AFDB7B000DDFA0 /* EntrepriseViewController.swift in Sources */,
+				312E3D98B21A5651E9330B9D /* Plane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,27 +472,29 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 634XQ7A57Z;
+				DEVELOPMENT_TEAM = 254U69QY85;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EqualPath/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app use camera to measure";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.EqualPath;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.esgi.hack.equalPath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -484,27 +505,29 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 634XQ7A57Z;
+				DEVELOPMENT_TEAM = 254U69QY85;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EqualPath/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app use camera to measure";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.EqualPath;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.esgi.hack.equalPath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -624,6 +647,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4AD93D4029B0C8AD005D1A33 /* XCRemoteSwiftPackageReference "SceneKit-SCNLine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/SceneKit-SCNLine.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4AD93D4129B0C8AD005D1A33 /* SCNLine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AD93D4029B0C8AD005D1A33 /* XCRemoteSwiftPackageReference "SceneKit-SCNLine" */;
+			productName = SCNLine;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDEC612929AFCED4004B11C7 /* Project object */;
 }
