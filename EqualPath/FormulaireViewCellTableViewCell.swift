@@ -1,14 +1,19 @@
 //
-//  BatimentTableViewCell.swift
+//  FormulaireViewCellTableViewCell.swift
 //  EqualPath
 //
-//  Created by macaron on 02/03/2023.
+//  Created by Maaz TAGELDIN on 02/03/2023.
 //
 
 import UIKit
 
-class BatimentTableViewCell: UITableViewCell {
-
+class FormulaireViewCellTableViewCell: UITableViewCell {
+    //@IBOutlet weak var selectedQuestion: UILabel!
+    
+    @IBOutlet weak var selectedQuestion: UITableView!
+    
+    var id: Int = 0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
