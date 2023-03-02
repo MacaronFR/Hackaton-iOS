@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "0 mètre"; ObjectID = "0pE-68-Nfs"; */
+"0pE-68-Nfs.text" = "0 mètre";
+
+/* Class = "UIButton"; normalTitle = "ARKit"; ObjectID = "2Dd-Fc-tXg"; */
+"2Dd-Fc-tXg.normalTitle" = "ARKit";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GMY-ag-kJz"; */
+"GMY-ag-kJz.text" = "Label";
+
+/* Class = "UILabel"; text = "Entreprise"; ObjectID = "Obe-Iw-yPi"; */
+"Obe-Iw-yPi.text" = "Entreprise";
+
+/* Class = "UILabel"; text = "SIRET : 0123456790123"; ObjectID = "VK0-VD-gBb"; */
+"VK0-VD-gBb.text" = "SIRET : 0123456790123";
+
+/* Class = "UILabel"; text = "EqualPath"; ObjectID = "cMk-4e-ooS"; */
+"cMk-4e-ooS.text" = "EqualPath";
+
+/* Class = "UILabel"; text = "Entreprise"; ObjectID = "f7b-Hw-bob"; */
+"f7b-Hw-bob.text" = "Entreprise";
+
+/* Class = "UIButton"; configuration.title = "+"; ObjectID = "juN-QB-OSv"; */
+"juN-QB-OSv.configuration.title" = "+";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "juN-QB-OSv"; */
+"juN-QB-OSv.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Start the evaluation"; ObjectID = "wcv-kO-cNa"; */
+"wcv-kO-cNa.configuration.title" = "Start the evaluation";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wcv-kO-cNa"; */
+"wcv-kO-cNa.normalTitle" = "Button";

@@ -13,7 +13,7 @@ class EntrepriseViewController: UIViewController, UITableViewDataSource, UITable
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EntrepriseCell") as! EntrepriseViewCellTableViewCell
-        cell.Label.text = "Ligne \(indexPath.row)"
+        cell.Label.text = "Ligne très très très longue \(indexPath.row)"
         cell.id = indexPath.row
         return cell
     }

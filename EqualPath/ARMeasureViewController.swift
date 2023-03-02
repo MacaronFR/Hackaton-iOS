@@ -89,30 +89,30 @@ class ARMeasureViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
-    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+    /*func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         DispatchQueue.main.async {
             if let planeAnchor = anchor as? ARPlaneAnchor {
                 let plane = Plane(anchor: planeAnchor)
                 node.addChildNode(plane)
-                //self.dictPlanes[planeAnchor] = plane
+                self.dictPlanes[planeAnchor] = plane
             }
         }
-    }
+    }*/
 
-    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+    /*func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         DispatchQueue.main.async {
             if let planeAnchor = anchor as? ARPlaneAnchor {
-                //let plane = self.dictPlanes[planeAnchor]
-                //plane?.updateWith(planeAnchor)
+                let plane = self.dictPlanes[planeAnchor]
+                plane?.updateWith(planeAnchor)
             }
         }
-    }
+    }*/
 
-    func renderer(_ renderer: SCNSceneRenderer, didRemove node: SCNNode, for anchor: ARAnchor) {
+    /*func renderer(_ renderer: SCNSceneRenderer, didRemove node: SCNNode, for anchor: ARAnchor) {
         if let planeAnchor = anchor as? ARPlaneAnchor {
-            //dictPlanes.removeValue(forKey: planeAnchor)
+            dictPlanes.removeValue(forKey: planeAnchor)
         }
-    }
+    }*/
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
