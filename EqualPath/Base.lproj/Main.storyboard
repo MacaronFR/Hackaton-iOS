@@ -77,12 +77,12 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvJ-RU-psS">
                                                     <rect key="frame" x="20" y="0.0" width="780" height="113"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BU2-Cy-tOW">
-                                                    <rect key="frame" x="66" y="121" width="638" height="32"/>
+                                                    <rect key="frame" x="26" y="121" width="688" height="32"/>
                                                     <segments>
                                                         <segment title="Pas du tout"/>
                                                         <segment title="Un peu"/>
@@ -95,9 +95,11 @@
                                                     </connections>
                                                 </segmentedControl>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gm0-gS-avN">
-                                                    <rect key="frame" x="723" y="118" width="87" height="35"/>
+                                                    <rect key="frame" x="729.5" y="121" width="80.5" height="32"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Mesurer"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Mesurer">
+                                                        <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                    </buttonConfiguration>
                                                     <connections>
                                                         <segue destination="jeE-bg-sRi" kind="show" id="Z4X-zQ-3TB"/>
                                                     </connections>
@@ -106,9 +108,9 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Gm0-gS-avN" secondAttribute="trailing" constant="10" id="1EU-sl-TUE"/>
                                                 <constraint firstAttribute="trailing" secondItem="qvJ-RU-psS" secondAttribute="trailing" constant="50" id="Avu-kS-loS"/>
-                                                <constraint firstItem="BU2-Cy-tOW" firstAttribute="leading" secondItem="vd5-BK-lTv" secondAttribute="leadingMargin" constant="50" id="OHu-FI-wvc"/>
+                                                <constraint firstItem="BU2-Cy-tOW" firstAttribute="leading" secondItem="vd5-BK-lTv" secondAttribute="leadingMargin" constant="10" id="OHu-FI-wvc"/>
                                                 <constraint firstItem="BU2-Cy-tOW" firstAttribute="bottom" secondItem="vd5-BK-lTv" secondAttribute="bottomMargin" id="X3A-hp-2Qj"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="BU2-Cy-tOW" secondAttribute="trailing" constant="100" id="b5m-jw-koA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BU2-Cy-tOW" secondAttribute="trailing" constant="90" id="b5m-jw-koA"/>
                                                 <constraint firstItem="qvJ-RU-psS" firstAttribute="top" secondItem="vd5-BK-lTv" secondAttribute="top" constant="10" id="eUQ-sj-Rw8"/>
                                                 <constraint firstAttribute="bottom" secondItem="Gm0-gS-avN" secondAttribute="bottom" constant="10" id="efl-W5-uyO"/>
                                                 <constraint firstItem="qvJ-RU-psS" firstAttribute="leading" secondItem="vd5-BK-lTv" secondAttribute="leading" constant="50" id="gKA-Ca-AgR"/>
@@ -117,6 +119,7 @@
                                         <connections>
                                             <outlet property="control" destination="BU2-Cy-tOW" id="ekc-hy-kpd"/>
                                             <outlet property="question" destination="qvJ-RU-psS" id="g3l-fG-CAb"/>
+                                            <outlet property="rC" destination="b5m-jw-koA" id="lBa-gn-pGZ"/>
                                             <outlet property="reponse" destination="BU2-Cy-tOW" id="FHq-1l-fh7"/>
                                             <outlet property="toAr" destination="Gm0-gS-avN" id="Prh-Hi-zOF"/>
                                         </connections>
@@ -137,7 +140,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Mr-Ko-bbr">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="WDH-mp-39H">
+                        <barButtonItem key="backBarButtonItem" title="Retour" id="3Nl-KW-5t6"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="done" id="WDH-mp-39H">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1a1-Gj-sFK">
                                 <rect key="frame" x="618" y="7.5" width="182" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -147,6 +151,7 @@
                                     <action selector="validate" destination="ER0-4V-ki1" eventType="touchUpInside" id="KDp-TI-dpb"/>
                                 </connections>
                             </button>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -282,7 +287,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entreprise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obe-Iw-yPi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choisir l'entreprise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obe-Iw-yPi">
                                 <rect key="frame" x="0.0" y="84" width="820" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
