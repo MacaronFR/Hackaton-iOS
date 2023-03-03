@@ -13,15 +13,23 @@ class FormulaireViewController: UIViewController, UITableViewDelegate, UITableVi
     var buildingId: String = ""
     var questions: [Question] = []
 
+    @IBAction func validate(){
+        navigationController?.popViewController(animated: true)
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FormulaireCell") as! FormulaireTableViewCell
         cell.questionId = questions[indexPath.row].id
         cell.question.text = questions[indexPath.row].text
         cell.note = questions[indexPath.row].garde
+        cell.isMeasure = questions[indexPath.row].isMeasure
+        cell.changeMeasure()
         if(questions[indexPath.row].garde == nil){
             cell.reponse.selectedSegmentIndex = -1
-        } else if(questions[indexPath.row].garde ?? 0 < 25){
+        } else if(questions[indexPath.row].garde ?? 0 < 25) {
             cell.reponse.selectedSegmentIndex = 0
+        }else if(questions[indexPath.row].garde ?? 0 == 100 && cell.isMeasure){
+            cell.reponse.selectedSegmentIndex = 1
         } else if (questions[indexPath.row].garde ?? 0 < 50) {
             cell.reponse.selectedSegmentIndex = 1
         } else if (questions[indexPath.row].garde ?? 0 < 75) {

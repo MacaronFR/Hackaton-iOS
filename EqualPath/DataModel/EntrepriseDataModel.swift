@@ -13,6 +13,6 @@ struct Entreprises: Codable {
     var siret : String
     var createdAt: String
     var updatedAt: String
-    var grade: Int
+    var grade: Int?
     var buildings: [Batiment]
 }

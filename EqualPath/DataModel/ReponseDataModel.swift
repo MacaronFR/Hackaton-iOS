@@ -14,6 +14,7 @@ struct Question : Codable {
     var createdAt: String
     var updatedAt: String
     var garde: Int?
+    var isMeasure: Bool
 }
 
 struct Response: Codable {

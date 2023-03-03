@@ -62,4 +62,12 @@ class ManageQuestionViewModel: ObservableObject {
         }.resume()
         return true
     }
+
+    func sendMail(id: String){
+        let urlString = urlApi.baseUrl + "/resources/email?buildingId=\(id)"
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        URLSession.shared.dataTask(with: url).resume()
+    }
 }
