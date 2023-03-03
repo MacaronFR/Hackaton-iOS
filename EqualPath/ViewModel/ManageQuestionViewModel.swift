@@ -7,8 +7,8 @@ import Foundation
 class ManageQuestionViewModel: ObservableObject {
     let urlApi = ApiService()
 
-    func returnListEntreprise(completion: @escaping (Result<[Question], Error>) -> Void) {
-        let urlString = urlApi.baseUrl + "/questions"
+    func returnListQuestion(id: String, completion: @escaping (Result<[Question], Error>) -> Void) {
+        let urlString = urlApi.baseUrl + "/questions?buildingId=\(id)"
         guard let url = URL(string: urlString) else {
             completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
             return
@@ -34,5 +34,32 @@ class ManageQuestionViewModel: ObservableObject {
             }
         }
         task.resume()
+    }
+
+    func sendResponse(questionId: String, buildingId: String, note: Int) -> Bool{
+        let urlString = urlApi.baseUrl + "/questions/answer/\(questionId)"
+        guard let url = URL(string: urlString) else {
+            return false
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        guard let httpBody = try? JSONEncoder().encode(Response(note: note, buildingId: buildingId)) else { return false }
+        request.httpBody = httpBody
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+                    if let error = error {
+                        NSLog(error.localizedDescription)
+                    }
+            if let response = response as? HTTPURLResponse {
+                if(response.statusCode == 200){
+                    return
+                }else {
+                    return
+                }
+            }else {
+                return
+            }
+        }.resume()
+        return true
     }
 }

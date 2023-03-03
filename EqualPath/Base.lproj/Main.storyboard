@@ -64,32 +64,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JDg-P6-Oa6">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="163" estimatedRowHeight="163" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JDg-P6-Oa6">
                                 <rect key="frame" x="0.0" y="136" width="820" height="1024"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FormulaireCell" rowHeight="90" id="h5o-yQ-MZg" customClass="FormulaireTableViewCell" customModule="EqualPath" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="820" height="90"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FormulaireCell" rowHeight="163" id="h5o-yQ-MZg" customClass="FormulaireTableViewCell" customModule="EqualPath" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="820" height="163"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h5o-yQ-MZg" id="vd5-BK-lTv">
-                                            <rect key="frame" x="0.0" y="0.0" width="820" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="820" height="163"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvJ-RU-psS">
-                                                    <rect key="frame" x="20" y="0.0" width="780" height="36"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvJ-RU-psS">
+                                                    <rect key="frame" x="20" y="0.0" width="780" height="113"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BU2-Cy-tOW">
+                                                    <rect key="frame" x="66" y="121" width="688" height="32"/>
+                                                    <segments>
+                                                        <segment title="Pas du tout"/>
+                                                        <segment title="Un peu"/>
+                                                        <segment title="Moyen"/>
+                                                        <segment title="Bien"/>
+                                                        <segment title="Très bien"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="segmentedControlActionWithSender:" destination="h5o-yQ-MZg" eventType="valueChanged" id="myf-57-pgs"/>
+                                                    </connections>
+                                                </segmentedControl>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="qvJ-RU-psS" secondAttribute="trailing" constant="20" id="Avu-kS-loS"/>
-                                                <constraint firstItem="qvJ-RU-psS" firstAttribute="top" secondItem="vd5-BK-lTv" secondAttribute="top" id="eUQ-sj-Rw8"/>
-                                                <constraint firstItem="qvJ-RU-psS" firstAttribute="leading" secondItem="vd5-BK-lTv" secondAttribute="leading" constant="20" id="gKA-Ca-AgR"/>
+                                                <constraint firstAttribute="trailing" secondItem="qvJ-RU-psS" secondAttribute="trailing" constant="50" id="Avu-kS-loS"/>
+                                                <constraint firstItem="BU2-Cy-tOW" firstAttribute="leading" secondItem="vd5-BK-lTv" secondAttribute="leadingMargin" constant="50" id="OHu-FI-wvc"/>
+                                                <constraint firstItem="BU2-Cy-tOW" firstAttribute="bottom" secondItem="vd5-BK-lTv" secondAttribute="bottomMargin" id="X3A-hp-2Qj"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BU2-Cy-tOW" secondAttribute="trailing" constant="50" id="b5m-jw-koA"/>
+                                                <constraint firstItem="qvJ-RU-psS" firstAttribute="top" secondItem="vd5-BK-lTv" secondAttribute="top" constant="10" id="eUQ-sj-Rw8"/>
+                                                <constraint firstItem="qvJ-RU-psS" firstAttribute="leading" secondItem="vd5-BK-lTv" secondAttribute="leading" constant="50" id="gKA-Ca-AgR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="question" destination="qvJ-RU-psS" id="g3l-fG-CAb"/>
+                                            <outlet property="reponse" destination="BU2-Cy-tOW" id="FHq-1l-fh7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -167,7 +184,7 @@
                                         <connections>
                                             <outlet property="adresse" destination="eCe-1q-Ate" id="C4Q-to-cNC"/>
                                             <outlet property="nom" destination="zF2-GX-Un2" id="0O3-QE-iLh"/>
-                                            <segue destination="ER0-4V-ki1" kind="show" id="zqj-hI-1OZ"/>
+                                            <segue destination="ER0-4V-ki1" kind="show" identifier="BatimentToFormulaire" id="zqj-hI-1OZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

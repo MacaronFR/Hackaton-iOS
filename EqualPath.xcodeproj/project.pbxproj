@@ -11,16 +11,16 @@
 		312E30913DD4A182E89CC203 /* ManageEntrepriseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E325C0F666666B5948B28 /* ManageEntrepriseViewModel.swift */; };
 		312E3537F6E6C678318707E2 /* EntrepriseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E36E3C97DB458581A2B8F /* EntrepriseDataModel.swift */; };
 		312E37404C540EBB96E0DA3F /* BatimentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E3F34C0B9C3BD7FFDC5E7 /* BatimentTableViewCell.swift */; };
+		312E37A6A93A9E0CC5BB733D /* FormulaireTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E397BCB23B0466D3C3BA2 /* FormulaireTableViewCell.swift */; };
 		312E38EA7A2E517FF55E5F33 /* BatimentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E3A2BCFA2AFA87148B374 /* BatimentDataModel.swift */; };
+		312E3995F5F497EE8E4B14BB /* FormulaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E341AD8F3EEE504FB0D57 /* FormulaireViewController.swift */; };
 		312E3AB564F8B645FB27F0C9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 312E3F255F447829931B3529 /* .gitignore */; };
 		312E3D8C6055353567A8FD81 /* ReponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E3C53497BB650CB92CEEF /* ReponseDataModel.swift */; };
 		312E3D98B21A5651E9330B9D /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E369DC7D95DA1DA1CBE8B /* Plane.swift */; };
-		312E3E6F12FF4C0BD2875BA8 /* ManageQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E39A685B223D18AFA00B6 /* ManageQuestionViewModel.swift */; };
+		312E3E1C2DB6580F7D8A7C86 /* ManageQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312E3466856BBBF2944DED5F /* ManageQuestionViewModel.swift */; };
 		4A04144629B0EFBA00598F57 /* BatimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04144529B0EFBA00598F57 /* BatimentViewController.swift */; };
 		4A08C87A29AFDB7B000DDFA0 /* EntrepriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */; };
 		4A4EC13429B09761006313C3 /* ARMeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4EC13329B09761006313C3 /* ARMeasureViewController.swift */; };
-		4AA3C84429B139F000C9ACC6 /* FormulaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3C84329B139F000C9ACC6 /* FormulaireViewController.swift */; };
-		4AA3C84629B13BB300C9ACC6 /* FormulaireTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3C84529B13BB300C9ACC6 /* FormulaireTableViewCell.swift */; };
 		4AD93D4229B0C8AD005D1A33 /* SCNLine in Frameworks */ = {isa = PBXBuildFile; productRef = 4AD93D4129B0C8AD005D1A33 /* SCNLine */; };
 		4AEE66DA29AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEE66D929AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift */; };
 		DDEC613529AFCED4004B11C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC613429AFCED4004B11C7 /* AppDelegate.swift */; };
@@ -53,9 +53,11 @@
 
 /* Begin PBXFileReference section */
 		312E325C0F666666B5948B28 /* ManageEntrepriseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageEntrepriseViewModel.swift; path = ViewModel/ManageEntrepriseViewModel.swift; sourceTree = "<group>"; };
+		312E341AD8F3EEE504FB0D57 /* FormulaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaireViewController.swift; sourceTree = "<group>"; };
+		312E3466856BBBF2944DED5F /* ManageQuestionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageQuestionViewModel.swift; path = ViewModel/ManageQuestionViewModel.swift; sourceTree = "<group>"; };
 		312E369DC7D95DA1DA1CBE8B /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		312E36E3C97DB458581A2B8F /* EntrepriseDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrepriseDataModel.swift; sourceTree = "<group>"; };
-		312E39A685B223D18AFA00B6 /* ManageQuestionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageQuestionViewModel.swift; path = ViewModel/ManageQuestionViewModel.swift; sourceTree = "<group>"; };
+		312E397BCB23B0466D3C3BA2 /* FormulaireTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaireTableViewCell.swift; sourceTree = "<group>"; };
 		312E3A2BCFA2AFA87148B374 /* BatimentDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatimentDataModel.swift; sourceTree = "<group>"; };
 		312E3BECAA44E30BD89655C4 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		312E3C53497BB650CB92CEEF /* ReponseDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReponseDataModel.swift; sourceTree = "<group>"; };
@@ -64,8 +66,6 @@
 		4A04144529B0EFBA00598F57 /* BatimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatimentViewController.swift; sourceTree = "<group>"; };
 		4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrepriseViewController.swift; sourceTree = "<group>"; };
 		4A4EC13329B09761006313C3 /* ARMeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMeasureViewController.swift; sourceTree = "<group>"; };
-		4AA3C84329B139F000C9ACC6 /* FormulaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireViewController.swift; sourceTree = "<group>"; };
-		4AA3C84529B13BB300C9ACC6 /* FormulaireTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaireTableViewCell.swift; sourceTree = "<group>"; };
 		4AD93D4329B0E3FD005D1A33 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		4AD93D4429B0E3FD005D1A33 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4AEE66D929AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrepriseViewCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -123,6 +123,7 @@
 		DDEC612829AFCED4004B11C7 = {
 			isa = PBXGroup;
 			children = (
+				4A04144729B0F39700598F57,
 				DDEC613329AFCED4004B11C7 /* EqualPath */,
 				DDEC614A29AFCED7004B11C7 /* EqualPathTests */,
 				DDEC615429AFCED7004B11C7 /* EqualPathUITests */,
@@ -144,8 +145,7 @@
 		DDEC613329AFCED4004B11C7 /* EqualPath */ = {
 			isa = PBXGroup;
 			children = (
-				4AA3C84529B13BB300C9ACC6 /* FormulaireTableViewCell.swift */,
-				4AA3C84329B139F000C9ACC6 /* FormulaireViewController.swift */,
+				312E35239272B9984C21673F /* DataModel */,
 				4A04144529B0EFBA00598F57 /* BatimentViewController.swift */,
 				4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */,
 				4AEE66D929AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift */,
@@ -162,7 +162,9 @@
 				312E3F34C0B9C3BD7FFDC5E7 /* BatimentTableViewCell.swift */,
 				312E3BECAA44E30BD89655C4 /* ApiService.swift */,
 				312E325C0F666666B5948B28 /* ManageEntrepriseViewModel.swift */,
-				312E39A685B223D18AFA00B6 /* ManageQuestionViewModel.swift */,
+				312E3466856BBBF2944DED5F /* ManageQuestionViewModel.swift */,
+				312E397BCB23B0466D3C3BA2 /* FormulaireTableViewCell.swift */,
+				312E341AD8F3EEE504FB0D57 /* FormulaireViewController.swift */,
 			);
 			path = EqualPath;
 			sourceTree = "<group>";
@@ -328,7 +330,6 @@
 			files = (
 				DDEC613929AFCED4004B11C7 /* ViewController.swift in Sources */,
 				DDEC613529AFCED4004B11C7 /* AppDelegate.swift in Sources */,
-				4AA3C84629B13BB300C9ACC6 /* FormulaireTableViewCell.swift in Sources */,
 				4A4EC13429B09761006313C3 /* ARMeasureViewController.swift in Sources */,
 				DDEC613729AFCED4004B11C7 /* SceneDelegate.swift in Sources */,
 				4AEE66DA29AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift in Sources */,
@@ -340,9 +341,10 @@
 				312E3537F6E6C678318707E2 /* EntrepriseDataModel.swift in Sources */,
 				312E37404C540EBB96E0DA3F /* BatimentTableViewCell.swift in Sources */,
 				312E30561B5F0066506B653F /* ApiService.swift in Sources */,
-				4AA3C84429B139F000C9ACC6 /* FormulaireViewController.swift in Sources */,
 				312E30913DD4A182E89CC203 /* ManageEntrepriseViewModel.swift in Sources */,
-				312E3E6F12FF4C0BD2875BA8 /* ManageQuestionViewModel.swift in Sources */,
+				312E3E1C2DB6580F7D8A7C86 /* ManageQuestionViewModel.swift in Sources */,
+				312E37A6A93A9E0CC5BB733D /* FormulaireTableViewCell.swift in Sources */,
+				312E3995F5F497EE8E4B14BB /* FormulaireViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
