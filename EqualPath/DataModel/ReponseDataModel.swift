@@ -16,12 +16,11 @@ struct Reponse : Codable {
 }
 
 struct Question : Codable {
-    var id_question: Int
-    var index_question : String
-    var weight_question : Int
-    var text_question : String
-    var id_handicap : Handicap
-    var error: String?
+    var id: String
+    var text : String
+    var weight : String
+    var createdAt: String
+    var updatedAt: String
 }
 
 struct Handicap : Codable {

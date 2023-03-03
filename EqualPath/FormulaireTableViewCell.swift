@@ -1,5 +1,5 @@
 //
-//  BatimentTableViewCell.swift
+//  FormulaireTableViewCell.swift
 //  EqualPath
 //
 //  Created by macaron on 02/03/2023.
@@ -7,12 +7,10 @@
 
 import UIKit
 
-class BatimentTableViewCell: UITableViewCell {
+class FormulaireTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nom: UILabel!
-    @IBOutlet weak var adresse: UILabel!
-
-    var id: String = ""
+    @IBOutlet weak var question: UILabel!
+    var questionId: String = ""
 
     override func awakeFromNib() {
         super.awakeFromNib()

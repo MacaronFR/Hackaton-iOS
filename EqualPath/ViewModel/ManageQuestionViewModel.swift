@@ -1,17 +1,14 @@
 //
-//  File.swift
-//  EqualPath
-//
-//  Created by Maaz TAGELDIN on 02/03/2023.
+// Created by macaron on 02/03/2023.
 //
 
 import Foundation
 
-class ManageBatimentViewModel: ObservableObject {
+class ManageQuestionViewModel: ObservableObject {
     let urlApi = ApiService()
-    
-    func returnListBatiment(idEntreprise : String, completion: @escaping (Result<Batiment, Error>) -> Void) {
-        let urlString = urlApi.baseUrl + "/T_BULDING?companyId=\(idEntreprise)"
+
+    func returnListEntreprise(completion: @escaping (Result<[Question], Error>) -> Void) {
+        let urlString = urlApi.baseUrl + "/questions"
         guard let url = URL(string: urlString) else {
             completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
             return
@@ -30,8 +27,8 @@ class ManageBatimentViewModel: ObservableObject {
                 return
             }
             do {
-                let  batiment = try JSONDecoder().decode(Batiment.self, from: data)
-                completion(.success(batiment))
+                let entreprise = try JSONDecoder().decode([Question].self, from: data)
+                completion(.success(entreprise))
             } catch {
                 completion(.failure(error))
             }
