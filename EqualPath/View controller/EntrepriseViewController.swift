@@ -16,6 +16,22 @@ class EntrepriseViewController: UIViewController, UITableViewDataSource, UITable
         cell.Label.text = companies[indexPath.row].name
         cell.ssiret.text = "SIRET : \(companies[indexPath.row].siret)"
         cell.id = companies[indexPath.row].id
+        //  get the string of the url
+        
+        if let imageUrlString = companies[indexPath.row].imageUrl, let imageUrl = URL(string: imageUrlString) {
+            do {
+                let imageData = try Data(contentsOf: imageUrl)
+                
+                let image = UIImage(data: imageData)
+                // Faites quelque chose avec l'image récupérée ici
+                cell.logo.image = image
+            } catch {
+                print("Erreur lors de la récupération de l'image: \(error.localizedDescription)")
+            }
+        } else {
+            print("L'URL de l'image est invalide")
+        }
+        
         cell.buildings = companies[indexPath.row].buildings
         return cell
     }

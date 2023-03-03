@@ -11,11 +11,16 @@ class EntrepriseViewCellTableViewCell: UITableViewCell {
     
     @IBOutlet weak var ssiret: UILabel!
     @IBOutlet weak var Label: UILabel!
-
+    @IBOutlet weak var logo: UIImageView!
+    
     var id: String = ""
     var buildings: [Batiment] = []
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        logo.image = UIImage(named: "Logo")
         // Initialization code
     }
 

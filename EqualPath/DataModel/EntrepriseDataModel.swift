@@ -15,4 +15,5 @@ struct Entreprises: Codable {
     var updatedAt: String
     var grade: Int?
     var buildings: [Batiment]
+    var imageUrl: String?
 }
