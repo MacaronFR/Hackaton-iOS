@@ -52,10 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		312E325C0F666666B5948B28 /* ManageEntrepriseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageEntrepriseViewModel.swift; path = ViewModel/ManageEntrepriseViewModel.swift; sourceTree = "<group>"; };
+		312E325C0F666666B5948B28 /* ManageEntrepriseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageEntrepriseViewModel.swift; sourceTree = "<group>"; };
 		312E369DC7D95DA1DA1CBE8B /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		312E36E3C97DB458581A2B8F /* EntrepriseDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntrepriseDataModel.swift; sourceTree = "<group>"; };
-		312E39A685B223D18AFA00B6 /* ManageQuestionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageQuestionViewModel.swift; path = ViewModel/ManageQuestionViewModel.swift; sourceTree = "<group>"; };
+		312E39A685B223D18AFA00B6 /* ManageQuestionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageQuestionViewModel.swift; sourceTree = "<group>"; };
 		312E3A2BCFA2AFA87148B374 /* BatimentDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatimentDataModel.swift; sourceTree = "<group>"; };
 		312E3BECAA44E30BD89655C4 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		312E3C53497BB650CB92CEEF /* ReponseDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReponseDataModel.swift; sourceTree = "<group>"; };
@@ -120,6 +120,37 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		DD40AD1B29B1F867009067B0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				312E3BECAA44E30BD89655C4 /* ApiService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DD40AD1C29B1F88F009067B0 /* View controller */ = {
+			isa = PBXGroup;
+			children = (
+				312E3F34C0B9C3BD7FFDC5E7 /* BatimentTableViewCell.swift */,
+				4A4EC13329B09761006313C3 /* ARMeasureViewController.swift */,
+				4AA3C84529B13BB300C9ACC6 /* FormulaireTableViewCell.swift */,
+				4AA3C84329B139F000C9ACC6 /* FormulaireViewController.swift */,
+				4A04144529B0EFBA00598F57 /* BatimentViewController.swift */,
+				4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */,
+				4AEE66D929AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift */,
+			);
+			path = "View controller";
+			sourceTree = "<group>";
+		};
+		DD40AD1D29B1F8D4009067B0 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				312E325C0F666666B5948B28 /* ManageEntrepriseViewModel.swift */,
+				312E39A685B223D18AFA00B6 /* ManageQuestionViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		DDEC612829AFCED4004B11C7 = {
 			isa = PBXGroup;
 			children = (
@@ -144,25 +175,18 @@
 		DDEC613329AFCED4004B11C7 /* EqualPath */ = {
 			isa = PBXGroup;
 			children = (
-				4AA3C84529B13BB300C9ACC6 /* FormulaireTableViewCell.swift */,
-				4AA3C84329B139F000C9ACC6 /* FormulaireViewController.swift */,
-				4A04144529B0EFBA00598F57 /* BatimentViewController.swift */,
-				4A08C87929AFDB7B000DDFA0 /* EntrepriseViewController.swift */,
-				4AEE66D929AFE99400BA88B9 /* EntrepriseViewCellTableViewCell.swift */,
+				DD40AD1B29B1F867009067B0 /* API */,
+				312E35239272B9984C21673F /* DataModel */,
+				DD40AD1D29B1F8D4009067B0 /* View Model */,
+				DD40AD1C29B1F88F009067B0 /* View controller */,
 				DDEC613429AFCED4004B11C7 /* AppDelegate.swift */,
 				DDEC613629AFCED4004B11C7 /* SceneDelegate.swift */,
 				DDEC613829AFCED4004B11C7 /* ViewController.swift */,
+				312E369DC7D95DA1DA1CBE8B /* Plane.swift */,
 				DDEC613A29AFCED4004B11C7 /* Main.storyboard */,
-				4A4EC13329B09761006313C3 /* ARMeasureViewController.swift */,
 				DDEC613D29AFCED7004B11C7 /* Assets.xcassets */,
 				DDEC613F29AFCED7004B11C7 /* LaunchScreen.storyboard */,
 				DDEC614229AFCED7004B11C7 /* Info.plist */,
-				312E369DC7D95DA1DA1CBE8B /* Plane.swift */,
-				312E35239272B9984C21673F /* DataModel */,
-				312E3F34C0B9C3BD7FFDC5E7 /* BatimentTableViewCell.swift */,
-				312E3BECAA44E30BD89655C4 /* ApiService.swift */,
-				312E325C0F666666B5948B28 /* ManageEntrepriseViewModel.swift */,
-				312E39A685B223D18AFA00B6 /* ManageQuestionViewModel.swift */,
 			);
 			path = EqualPath;
 			sourceTree = "<group>";
