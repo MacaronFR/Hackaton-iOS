@@ -281,7 +281,16 @@
                             <constraint firstItem="n9Y-ow-RVw" firstAttribute="leading" secondItem="x1B-s0-E3x" secondAttribute="leading" id="sRA-LZ-3Fy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hBk-Aa-Z50"/>
+                    <navigationItem key="navigationItem" id="hBk-Aa-Z50">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="fuS-Gn-WXR">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="EXq-yA-PHH">
+                                <rect key="frame" x="618" y="7.5" width="182" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Créer une entreprise"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="n9Y-ow-RVw" id="bSY-mv-2BA"/>
                     </connections>
